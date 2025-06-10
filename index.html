@@ -15,10 +15,71 @@
   <div class="date">Last updated: June 8, 2025</div>
 </body>
 
-<form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="F96VJMVMHEDAJ" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
+<!-- PayPal SDK -->
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAACJnbnT1WuzwmKnhn3gRKhlusKpIj32eYQLSZFjVIhOiy3VVEfgpZv3UPhDuxMGwKTlAXF_kAd5Z-Kqg&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
+
+<div class="donation-buttons">
+  <h2>🔥 Debt Relief Options:</h2>
+
+  <div class="paypal-button-wrapper">
+    <p>🍜 $5 – Cup Ramen Fund</p>
+    <div id="paypal-container-BT93HF2BEBPS6"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "BT93HF2BEBPS6",
+      }).render("#paypal-container-BT93HF2BEBPS6");
+    </script>
+  </div>
+
+  <div class="paypal-button-wrapper">
+    <p>⛽ $10 – Gas Money</p>
+    <div id="paypal-container-LHS54A8QH8X6Q"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "LHS54A8QH8X6Q",
+      }).render("#paypal-container-LHS54A8QH8X6Q");
+    </script>
+  </div>
+
+  <div class="paypal-button-wrapper">
+    <p>💉 $25 – Financial Defibrillator</p>
+    <div id="paypal-container-9L5NHH7LS3RC6"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "9L5NHH7LS3RC6",
+      }).render("#paypal-container-9L5NHH7LS3RC6");
+    </script>
+  </div>
+</div>
+
+<style>
+.donation-buttons {
+  text-align: center;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.donation-buttons h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.paypal-button-wrapper {
+  margin-bottom: 28px;
+}
+
+.paypal-button-wrapper p {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+</style>
+
+
+<body>
+    <h1> Full website in development - stay tuned...</h1>
+</body>
 
 </html>
