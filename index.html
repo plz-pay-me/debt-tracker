@@ -5,102 +5,112 @@
   <meta charset="UTF-8">
   <title>My Debt Tracker</title>
   <style>
-    body { font-family: sans-serif; text-align: center; margin-top: 100px; background-color: #f0fff4; /* a soft mint dreen */}
-    .debt { font-size: 3em; color: darkred; }
-    .date { color: gray; }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: #f0fff4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    .debt {
+      font-size: 3em;
+      color: darkred;
+      margin: 0.5em 0;
+    }
+
+    .date {
+      color: gray;
+      font-size: 1.2em;
+    }
+
+    .donation-buttons {
+      text-align: center;
+      margin: 2em auto;
+    }
+
+    .donation-buttons h2 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+
+    .paypal-button-row {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .paypal-button-wrapper {
+      width: 200px;
+      text-align: center;
+    }
+
+    .paypal-button-wrapper p {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 3em 0 1em;
+      font-size: 1.3em;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Current Debt</h1>
-  <div class="debt">$213,318.09</div>
-  <div class="date">Last updated: June 8, 2025</div>
-</body>
+  <header>
+    <h1>Current Debt</h1>
+    <div class="debt">$213,318.09</div>
+    <div class="date">Last updated: June 8, 2025</div>
+  </header>
 
-<div class="contents">
-    <!--Donation Buttons-->
-<div class="donation-buttons">
-  <h2>🔥 Debt Relief Options</h2>
-  <div class="paypal-button-row">
+  <div class="donation-buttons">
+    <h2>🔥 Debt Relief Options</h2>
+    <div class="paypal-button-row">
+      <div class="paypal-button-wrapper">
+        <p>🍜<br>$5 – Cup Ramen Fund</p>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="hosted_button_id" value="VM5PVXBJEQP7C" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Donate with PayPal" />
+        </form>
+      </div>
 
-    <div class="paypal-button-wrapper">
-      <p>🍜<br>$5 – Cup Ramen Fund</p>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="VM5PVXBJEQP7C" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-      </form>
+      <div class="paypal-button-wrapper">
+        <p>⛽<br>$10 – Gas Money</p>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="hosted_button_id" value="WG8YBEVHEGJHA" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Donate with PayPal" />
+        </form>
+      </div>
+
+      <div class="paypal-button-wrapper">
+        <p>💉<br>$25 – Financial Defibrillator</p>
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="hosted_button_id" value="N8SPAUDEQN5AC" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Donate with PayPal" />
+        </form>
+      </div>
     </div>
-
-    <div class="paypal-button-wrapper">
-      <p>⛽<br>$10 – Gas Money</p>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="WG8YBEVHEGJHA" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-      </form>
-    </div>
-
-    <div class="paypal-button-wrapper">
-      <p>💉<br>$25 – Financial Defibrillator</p>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="N8SPAUDEQN5AC" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-      </form>
-    </div>
-
   </div>
-</div>
 
-<style>
-.donation-buttons {
-  text-align: center;
-  margin: 2em auto;
-}
-
-.donation-buttons h2 {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-}
-
-.paypal-button-row {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.paypal-button-wrapper {
-  width: 200px;
-  text-align: center;
-}
-
-.paypal-button-wrapper p {
-  font-size: 1em;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-</style>
-</div>
-<style>
-    body {
-        background-color:#f0fff4;
-        font-family: sans-serif;    
-        }
-        .content {
-            max-wifth: 800px;
-            margin: 0 autor;
-            padding: 2em;
-        }
-</style>
-
-
-
-
-
-<!--Website under construction message.-->
-<body>
-    <h1> Full website in development - stay tuned...</h1>
+  <footer>
+    <h1>Full website in development – stay tuned...</h1>
+  </footer>
 </body>
-
 </html>
