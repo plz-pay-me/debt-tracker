@@ -19,39 +19,42 @@
 <!--Donation Buttons-->
 <div class="donation-buttons">
   <h2>🔥 Debt Relief Options</h2>
+  <div class="paypal-button-row">
 
-  <div class="paypal-button-wrapper">
-    <p>🍜 $5 – Cup Ramen Fund</p>
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-      <input type="hidden" name="hosted_button_id" value="VM5PVXBJEQP7C" />
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-    </form>
-  </div>
+    <div class="paypal-button-wrapper">
+      <p>🍜<br>$5 – Cup Ramen Fund</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="VM5PVXBJEQP7C" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    </div>
 
-  <div class="paypal-button-wrapper">
-    <p>⛽ $10 – Gas Money</p>
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-      <input type="hidden" name="hosted_button_id" value="WG8YBEVHEGJHA" />
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-    </form>
-  </div>
+    <div class="paypal-button-wrapper">
+      <p>⛽<br>$10 – Gas Money</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="WG8YBEVHEGJHA" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    </div>
 
-  <div class="paypal-button-wrapper">
-    <p>💉 $25 – Financial Defibrillator</p>
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-      <input type="hidden" name="hosted_button_id" value="N8SPAUDEQN5AC" />
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
-      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-    </form>
+    <div class="paypal-button-wrapper">
+      <p>💉<br>$25 – Financial Defibrillator</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="N8SPAUDEQN5AC" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Donate with PayPal" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    </div>
+
   </div>
 </div>
 
 <style>
 .donation-buttons {
   text-align: center;
-  margin: 2em 0;
+  margin: 2em auto;
 }
 
 .donation-buttons h2 {
@@ -59,16 +62,25 @@
   margin-bottom: 1em;
 }
 
+.paypal-button-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
 .paypal-button-wrapper {
-  margin-bottom: 24px;
+  width: 200px;
+  text-align: center;
 }
 
 .paypal-button-wrapper p {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 8px;
 }
 </style>
+
 
 
 
